@@ -7,7 +7,6 @@ public class averageCalculator {
         math = not.nextFloat();
         if (math >= 0 && math <= 100) {
             total += math;
-            System.out.println(total);
             dersSayisi++;
             notTotal += math;
         }
@@ -17,7 +16,6 @@ public class averageCalculator {
         phys = not.nextFloat();
         if (phys >= 0 && phys <= 100) {
             total += phys;
-            System.out.println(total);
             dersSayisi++;
             notTotal += phys;
         }
@@ -27,7 +25,6 @@ public class averageCalculator {
         turk = not.nextFloat();
         if (turk >= 0 && turk <= 100) {
             total += turk;
-            System.out.println(total);
             dersSayisi++;
             notTotal += turk;
         }
@@ -37,7 +34,6 @@ public class averageCalculator {
         chem = not.nextFloat();
         if (chem >= 0 && chem <= 100) {
             total += chem;
-            System.out.println(total);
             dersSayisi++;
             notTotal += chem;
         }
@@ -47,7 +43,6 @@ public class averageCalculator {
         music = not.nextFloat();
         if (music >= 0 && music <= 100) {
             total += music;
-            System.out.println(total);
             dersSayisi++;
             notTotal += music;
         }
@@ -56,7 +51,7 @@ public class averageCalculator {
         float average = total / dersSayisi;
         if (notTotal == 0 || average < 55) {
             System.out.println("Basarisiz.");
-        } else if (notTotal == 100 || notTotal >= 55) {
+        } else if (notTotal >= 55) {
             System.out.println("Basarili");
         }
         System.out.println("Not ortalamaniz=    " + average);
