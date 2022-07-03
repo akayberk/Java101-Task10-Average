@@ -55,5 +55,6 @@ public class averageCalculator {
             System.out.println("Basarili");
         }
         System.out.println("Not ortalamaniz=    " + average);
+
     }
 }
